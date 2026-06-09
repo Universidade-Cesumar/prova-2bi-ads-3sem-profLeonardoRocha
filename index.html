@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almoxarifado Enfermagem - SENAC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="painel-topo">
+        <h1>📦 Controle de Almoxarifado</h1>
+        <div class="dashboard">
+            <p>Total de Itens Diferentes: <span id="total-itens">0</span></p>
+            <input type="text" id="input-busca" placeholder="Buscar material pelo nome...">
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Cadastrar Novo Material</h2>
+            <div class="form-grupo">
+                <input type="text" id="input-nome" placeholder="Nome do item (ex: Seringa 10ml)">
+                <input type="number" id="input-quantidade" placeholder="Quantidade inicial">
+                <button id="btn-cadastrar">Cadastrar</button>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Retirada Rápida (Baixa)</h2>
+            <p><small>Digite a quantidade antes de clicar em "Dar Baixa" na tabela abaixo.</small></p>
+            <input type="number" id="input-retirada" placeholder="Qtd a retirar" value="1">
+        </section>
+
+        <section class="card">
+            <h2>Inventário Atual</h2>
+            <ul id="lista-materiais">
+                </ul>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

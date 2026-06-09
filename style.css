@@ -1,1 +1,96 @@
 /* Caso queira utilizar framework como Bootstrap para estilização, pode utilizar. Basta ignoar esse arquivo */
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+}
+
+.painel-topo {
+    background-color: #005b96;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard input {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-grupo {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #03396c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #011f4b;
+}
+
+/* Classes dinâmicas injetadas pelo JS */
+.btn-baixar {
+    background-color: #e27d60;
+    margin-left: 10px;
+}
+
+.btn-excluir {
+    background-color: #c83349;
+    margin-left: 5px;
+}
+
+li {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid #03396c;
+}
+
+/* Sprint 3: Classe exigida no Contrato para estoque baixo */
+.estoque-critico {
+    border-left: 5px solid #c83349;
+    background-color: #ffeded;
+    color: #c83349;
+    font-weight: bold;
+}
